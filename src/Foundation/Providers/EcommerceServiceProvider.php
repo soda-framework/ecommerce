@@ -53,6 +53,7 @@ class EcommerceServiceProvider extends ServiceProvider
         $this->registerDependencies([
             RouteServiceProvider::class,
             EventServiceProvider::class,
+            CommandsServiceProvider::class,
             CustomerServiceProvider::class,
             StoreServiceProvider::class,
             OrderServiceProvider::class,

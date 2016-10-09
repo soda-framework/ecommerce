@@ -1,6 +1,6 @@
 <?php
 
-namespace Soda\Ecommerce\Console;
+namespace Soda\Ecommerce\Foundation\Console;
 
 use Illuminate\Console\Command;
 
