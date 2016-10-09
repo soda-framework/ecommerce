@@ -1,0 +1,34 @@
+{
+  "name": "soda-framework/ecommerce",
+  "license": "MIT",
+  "description": "Soda Framework: Ecommerce",
+  "keywords": [
+    "CMS",
+    "Soda",
+    "Framework",
+    "Laravel",
+    "Ecommerce"
+  ],
+  "authors": [
+    {
+      "name": "Ryan Brereton-Canham",
+      "email": "ryzaar@hotmail.com"
+    },
+    {
+      "name": "Jarrad Littleford",
+      "email": "jplittleford@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "soda-framework/cms": "0.4.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Soda\\Ecommerce\\": "src/"
+    },
+    "classmap": [
+      "database/seeds"
+    ]
+  }
+}
