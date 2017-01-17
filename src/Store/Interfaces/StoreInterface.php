@@ -2,8 +2,6 @@
 
 namespace Soda\Ecommerce\Store\Interfaces;
 
-use Soda\Ecommerce\Support\Interfaces\HasProductsInterface;
-
 interface StoreInterface
 {
     /**
@@ -27,7 +25,7 @@ interface StoreInterface
     public function cartedProdcuts();
 
     /**
-     * Get the unique ID of the store
+     * Get the unique ID of the store.
      */
     public function getId();
 }

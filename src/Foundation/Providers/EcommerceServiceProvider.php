@@ -2,18 +2,18 @@
 
 namespace Soda\Ecommerce\Foundation\Providers;
 
-use Illuminate\Support\ServiceProvider;
 use Soda;
-use Soda\Cms\Support\Traits\SodaServiceProviderTrait;
+use Illuminate\Support\ServiceProvider;
 use Soda\Ecommerce\Cart\CartServiceProvider;
-use Soda\Ecommerce\Customer\CustomerServiceProvider;
-use Soda\Ecommerce\Customer\Interfaces\CustomerInterface;
-use Soda\Ecommerce\Foundation\EcommerceInstance;
 use Soda\Ecommerce\Order\OrderServiceProvider;
+use Soda\Ecommerce\Store\StoreServiceProvider;
+use Soda\Ecommerce\Foundation\EcommerceInstance;
 use Soda\Ecommerce\Product\ProductServiceProvider;
 use Soda\Ecommerce\Store\Interfaces\StoreInterface;
-use Soda\Ecommerce\Store\StoreServiceProvider;
 use Soda\Ecommerce\Support\Facades\EcommerceFacade;
+use Soda\Ecommerce\Customer\CustomerServiceProvider;
+use Soda\Cms\Support\Traits\SodaServiceProviderTrait;
+use Soda\Ecommerce\Customer\Interfaces\CustomerInterface;
 
 class EcommerceServiceProvider extends ServiceProvider
 {
@@ -33,7 +33,7 @@ class EcommerceServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        require(__DIR__.'/../../Support/helpers.php');
+        require __DIR__.'/../../Support/helpers.php';
 
         $this->publishes([__DIR__.'/../../../config' => config_path('soda.ecommerce')], 'soda.ecommerce.config');
         $this->publishes([__DIR__.'/../../../public' => public_path('soda/ecommerce')], 'soda.ecommerce.assets');

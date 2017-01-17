@@ -3,11 +3,11 @@
 namespace Soda\Ecommerce\Product;
 
 use Illuminate\Support\ServiceProvider;
-use Soda\Ecommerce\Product\Interfaces\ProductInterface;
-use Soda\Ecommerce\Product\Interfaces\ProductRepositoryInterface;
-use Soda\Ecommerce\Product\Interfaces\StoreProductInterface;
 use Soda\Ecommerce\Product\Models\Product;
 use Soda\Ecommerce\Product\Models\StoreProduct;
+use Soda\Ecommerce\Product\Interfaces\ProductInterface;
+use Soda\Ecommerce\Product\Interfaces\StoreProductInterface;
+use Soda\Ecommerce\Product\Interfaces\ProductRepositoryInterface;
 
 class ProductServiceProvider extends ServiceProvider
 {

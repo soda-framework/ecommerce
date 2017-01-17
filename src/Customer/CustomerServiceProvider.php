@@ -3,10 +3,10 @@
 namespace Soda\Ecommerce\Customer;
 
 use Illuminate\Support\ServiceProvider;
-use Soda\Ecommerce\Customer\Interfaces\CustomerAddressInterface;
-use Soda\Ecommerce\Customer\Interfaces\CustomerInterface;
 use Soda\Ecommerce\Customer\Models\Customer;
 use Soda\Ecommerce\Customer\Models\CustomerAddress;
+use Soda\Ecommerce\Customer\Interfaces\CustomerInterface;
+use Soda\Ecommerce\Customer\Interfaces\CustomerAddressInterface;
 
 class CustomerServiceProvider extends ServiceProvider
 {

@@ -6,13 +6,12 @@ use Illuminate\Console\Command;
 
 class Assets extends Command
 {
-
     protected $signature = 'soda:ecommerce:assets';
     protected $description = 'Update assets for the Soda Ecommerce module';
     protected $except = [];
 
     /**
-     * Force publishes Soda Ecommerce assets
+     * Force publishes Soda Ecommerce assets.
      */
     public function handle()
     {
@@ -24,4 +23,3 @@ class Assets extends Command
         $this->info('Soda Ecommerce styles and assets updated successfully.');
     }
 }
-

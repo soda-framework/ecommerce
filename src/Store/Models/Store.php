@@ -4,11 +4,11 @@ namespace Soda\Ecommerce\Store\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Soda\Ecommerce\Cart\Interfaces\CartItemInterface;
-use Soda\Ecommerce\Customer\Interfaces\CustomerInterface;
 use Soda\Ecommerce\Order\Interfaces\OrderInterface;
-use Soda\Ecommerce\Product\Interfaces\ProductInterface;
 use Soda\Ecommerce\Store\Interfaces\StoreInterface;
+use Soda\Ecommerce\Cart\Interfaces\CartItemInterface;
+use Soda\Ecommerce\Product\Interfaces\ProductInterface;
+use Soda\Ecommerce\Customer\Interfaces\CustomerInterface;
 
 class Store extends Model implements StoreInterface
 {
@@ -45,7 +45,7 @@ class Store extends Model implements StoreInterface
     protected $dates = ['deleted_at'];
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
@@ -55,7 +55,7 @@ class Store extends Model implements StoreInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
@@ -65,7 +65,7 @@ class Store extends Model implements StoreInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
@@ -75,7 +75,7 @@ class Store extends Model implements StoreInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
@@ -85,9 +85,9 @@ class Store extends Model implements StoreInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
-     * @return integer
+     * @return int
      */
     public function getId()
     {

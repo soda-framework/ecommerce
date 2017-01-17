@@ -6,7 +6,6 @@ use Illuminate\Console\Command;
 
 class Update extends Command
 {
-
     protected $signature = 'soda:ecommerce:update';
     protected $description = 'Update your version of the Soda Ecommerce module';
 
@@ -17,4 +16,3 @@ class Update extends Command
         $this->info('Soda Ecommerce module update complete.');
     }
 }
-

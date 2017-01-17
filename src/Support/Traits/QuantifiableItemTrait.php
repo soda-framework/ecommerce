@@ -7,7 +7,7 @@ use Soda\Ecommerce\Foundation\PriceFormatter;
 trait QuantifiableItemTrait
 {
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return $this
      */
@@ -19,7 +19,7 @@ trait QuantifiableItemTrait
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return $this
      */
@@ -31,7 +31,7 @@ trait QuantifiableItemTrait
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return $this
      */
@@ -43,7 +43,7 @@ trait QuantifiableItemTrait
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return $this
      */
@@ -55,7 +55,7 @@ trait QuantifiableItemTrait
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return float
      */
@@ -65,7 +65,7 @@ trait QuantifiableItemTrait
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return float
      */
@@ -75,7 +75,7 @@ trait QuantifiableItemTrait
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return float
      */
@@ -85,9 +85,9 @@ trait QuantifiableItemTrait
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
-     * @return integer
+     * @return int
      */
     public function getQuantity()
     {

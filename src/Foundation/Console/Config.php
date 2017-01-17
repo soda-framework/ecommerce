@@ -6,13 +6,12 @@ use Illuminate\Console\Command;
 
 class Config extends Command
 {
-
     protected $signature = 'soda:ecommerce:config';
     protected $description = 'Update config for the Soda Ecommerce module';
     protected $except = [];
 
     /**
-     * Force publishes Soda Ecommerce assets
+     * Force publishes Soda Ecommerce assets.
      */
     public function handle()
     {
@@ -24,4 +23,3 @@ class Config extends Command
         $this->info('Soda Ecommerce config updated successfully.');
     }
 }
-
