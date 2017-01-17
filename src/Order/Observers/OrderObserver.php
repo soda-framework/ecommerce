@@ -2,8 +2,8 @@
 
 namespace Soda\Ecommerce\Order\Observers;
 
-use Soda\Ecommerce\Order\Events\OrderStatusChanged;
 use Soda\Ecommerce\Order\Events\OrderWasPlaced;
+use Soda\Ecommerce\Order\Events\OrderStatusChanged;
 use Soda\Ecommerce\Order\Interfaces\OrderInterface;
 
 class OrderObserver

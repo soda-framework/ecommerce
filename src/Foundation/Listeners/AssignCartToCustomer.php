@@ -2,8 +2,8 @@
 
 namespace Soda\Ecommerce\Foundation\Listeners;
 
-use Soda\Ecommerce\Cart\Interfaces\CartItemRepositoryInterface;
 use Soda\Ecommerce\Customer\Interfaces\CustomerInterface;
+use Soda\Ecommerce\Cart\Interfaces\CartItemRepositoryInterface;
 
 class AssignCartToCustomer
 {

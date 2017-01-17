@@ -38,7 +38,7 @@ class Product extends Model implements ProductInterface
     protected $dates = ['deleted_at'];
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\hasMany
      */

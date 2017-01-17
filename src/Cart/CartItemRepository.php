@@ -2,16 +2,15 @@
 
 namespace Soda\Ecommerce\Cart;
 
-use Ecommerce;
 use Event;
+use Ecommerce;
+use Soda\Ecommerce\Foundation\Constants;
 use Illuminate\Database\Eloquent\Collection;
-use Session;
 use Soda\Ecommerce\Cart\Events\CartItemWasRemoved;
 use Soda\Ecommerce\Cart\Interfaces\CartItemInterface;
-use Soda\Ecommerce\Cart\Interfaces\CartItemRepositoryInterface;
-use Soda\Ecommerce\Foundation\Constants;
-use Soda\Ecommerce\Foundation\Exceptions\InvalidPriceException;
 use Soda\Ecommerce\Product\Interfaces\StoreProductInterface;
+use Soda\Ecommerce\Cart\Interfaces\CartItemRepositoryInterface;
+use Soda\Ecommerce\Foundation\Exceptions\InvalidPriceException;
 
 class CartItemRepository implements CartItemRepositoryInterface
 {
@@ -31,7 +30,7 @@ class CartItemRepository implements CartItemRepositoryInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function deleteByProductId($productId, $discontinued = false)
     {
@@ -53,7 +52,7 @@ class CartItemRepository implements CartItemRepositoryInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return CartItemInterface
      * @throws InvalidPriceException
@@ -81,7 +80,7 @@ class CartItemRepository implements CartItemRepositoryInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return CartItemInterface
      */
@@ -104,7 +103,7 @@ class CartItemRepository implements CartItemRepositoryInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return CartItemInterface
      */
@@ -119,7 +118,7 @@ class CartItemRepository implements CartItemRepositoryInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function clearVisitorCart()
     {
@@ -139,7 +138,7 @@ class CartItemRepository implements CartItemRepositoryInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return Collection
      */
@@ -153,7 +152,7 @@ class CartItemRepository implements CartItemRepositoryInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function moveSessionToCustomer($customerId)
     {
@@ -168,7 +167,7 @@ class CartItemRepository implements CartItemRepositoryInterface
     }
 
     /**
-     * Extracts id from StoreProductInterface model if possible, and returns integer id
+     * Extracts id from StoreProductInterface model if possible, and returns integer id.
      *
      * @param $productId
      *
@@ -186,7 +185,7 @@ class CartItemRepository implements CartItemRepositoryInterface
     /**
      * Fetches a cart row by product id, or creates a new row if none is found
      * It should be noted that if a new row is created, it is NOT saved to
-     * the database
+     * the database.
      *
      * @param $productId
      *

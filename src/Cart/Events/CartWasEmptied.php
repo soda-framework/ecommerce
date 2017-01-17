@@ -1,7 +1,6 @@
 <?php
-namespace Soda\Ecommerce\Cart\Events;
 
-use Ecommerce;
+namespace Soda\Ecommerce\Cart\Events;
 
 class CartWasEmptied
 {

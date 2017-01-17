@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Facade;
 class EcommerceFacade extends Facade
 {
     /**
-     *
      * Get the registered name of the component.
      *
      * @return string
@@ -16,5 +15,4 @@ class EcommerceFacade extends Facade
     {
         return 'soda.ecommerce';
     }
-
 }

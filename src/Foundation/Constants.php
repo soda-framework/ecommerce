@@ -1,4 +1,5 @@
 <?php
+
 namespace Soda\Ecommerce\Foundation;
 
 class Constants

@@ -4,10 +4,10 @@ namespace Soda\Ecommerce\Product\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Soda\Ecommerce\Product\Interfaces\ProductInterface;
-use Soda\Ecommerce\Product\Interfaces\StoreProductInterface;
-use Soda\Ecommerce\Product\Observers\StoreProductObserver;
 use Soda\Ecommerce\Store\Interfaces\StoreInterface;
+use Soda\Ecommerce\Product\Interfaces\ProductInterface;
+use Soda\Ecommerce\Product\Observers\StoreProductObserver;
+use Soda\Ecommerce\Product\Interfaces\StoreProductInterface;
 
 class StoreProduct extends Model implements StoreProductInterface
 {
@@ -53,7 +53,7 @@ class StoreProduct extends Model implements StoreProductInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
@@ -63,7 +63,7 @@ class StoreProduct extends Model implements StoreProductInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
@@ -73,9 +73,9 @@ class StoreProduct extends Model implements StoreProductInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
-     * @return integer
+     * @return int
      */
     public function getId()
     {
@@ -83,7 +83,7 @@ class StoreProduct extends Model implements StoreProductInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return float
      */

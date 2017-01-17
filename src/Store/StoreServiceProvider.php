@@ -2,10 +2,10 @@
 
 namespace Soda\Ecommerce\Store;
 
+use Soda\Ecommerce\Store\Models\Store;
 use Illuminate\Support\ServiceProvider;
 use Soda\Ecommerce\Store\Interfaces\StoreInterface;
 use Soda\Ecommerce\Store\Interfaces\StoreRepositoryInterface;
-use Soda\Ecommerce\Store\Models\Store;
 
 class StoreServiceProvider extends ServiceProvider
 {
