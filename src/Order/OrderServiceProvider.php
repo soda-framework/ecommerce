@@ -2,12 +2,12 @@
 
 namespace Soda\Ecommerce\Order;
 
+use Soda\Ecommerce\Order\Models\Order;
 use Illuminate\Support\ServiceProvider;
+use Soda\Ecommerce\Order\Models\OrderItem;
 use Soda\Ecommerce\Order\Interfaces\OrderInterface;
 use Soda\Ecommerce\Order\Interfaces\OrderItemInterface;
 use Soda\Ecommerce\Order\Interfaces\OrderRepositoryInterface;
-use Soda\Ecommerce\Order\Models\Order;
-use Soda\Ecommerce\Order\Models\OrderItem;
 
 class OrderServiceProvider extends ServiceProvider
 {

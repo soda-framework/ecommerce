@@ -4,7 +4,7 @@ namespace Soda\Ecommerce\Foundation\Exceptions;
 
 use Exception;
 
-class InvalidOrderException extends Exception
+class EmptyOrderException extends Exception
 {
     //
 }

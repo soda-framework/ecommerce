@@ -2,14 +2,13 @@
 
 namespace Soda\Ecommerce\Cart\Observers;
 
+use Soda\Ecommerce\Cart\Events\CartWasUpdated;
 use Soda\Ecommerce\Cart\Events\CartItemWasAdded;
 use Soda\Ecommerce\Cart\Events\CartItemWasUpdated;
-use Soda\Ecommerce\Cart\Events\CartWasUpdated;
 use Soda\Ecommerce\Cart\Interfaces\CartItemInterface;
 
 class CartItemObserver
 {
-
     /**
      * Listen to the CartItem updated event.
      *

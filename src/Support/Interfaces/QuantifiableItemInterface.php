@@ -5,14 +5,14 @@ namespace Soda\Ecommerce\Support\Interfaces;
 interface QuantifiableItemInterface
 {
     /**
-     * Get the quantity for an item
+     * Get the quantity for an item.
      *
-     * @return integer
+     * @return int
      */
     public function getQuantity();
 
     /**
-     * Set the quantity for an item
+     * Set the quantity for an item.
      *
      * @param $quantity
      *
@@ -21,7 +21,7 @@ interface QuantifiableItemInterface
     public function setQuantity($quantity);
 
     /**
-     * Increment the quantity of an item by a set amount
+     * Increment the quantity of an item by a set amount.
      *
      * @param $by
      *
@@ -30,7 +30,7 @@ interface QuantifiableItemInterface
     public function incrementQuantity($by);
 
     /**
-     * Decrement the quantity of an item by a set amount
+     * Decrement the quantity of an item by a set amount.
      *
      * @param $by
      *
@@ -39,7 +39,7 @@ interface QuantifiableItemInterface
     public function decrementQuantity($by);
 
     /**
-     * Set the unit price for an item
+     * Set the unit price for an item.
      *
      * @param $unitPrice
      *
@@ -48,21 +48,21 @@ interface QuantifiableItemInterface
     public function setUnitPrice($unitPrice);
 
     /**
-     * Get the unit price for an item
+     * Get the unit price for an item.
      *
      * @return float
      */
     public function getUnitPrice();
 
     /**
-     * Get the adjusted unit price for an item
+     * Get the adjusted unit price for an item.
      *
      * @return float
      */
     public function displayUnitPrice();
 
     /**
-     * Display the total price for a number of items
+     * Display the total price for a number of items.
      *
      * @return float
      */

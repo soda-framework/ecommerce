@@ -17,17 +17,17 @@ interface CartItemInterface extends QuantifiableItemInterface
     public function store();
 
     /**
-     * Get the id of the cart items row
+     * Get the id of the cart items row.
      */
     public function getId();
 
     /**
-     * Get the id of the store associated with the cart item
+     * Get the id of the store associated with the cart item.
      */
     public function getStoreId();
 
     /**
-     * Get the id of the store product associated with the cart item
+     * Get the id of the store product associated with the cart item.
      */
     public function getProductId();
 }

@@ -25,14 +25,14 @@ interface OrderInterface
     public function getStatus();
 
     /**
-     * Set the status of the order
+     * Set the status of the order.
      *
      * @param $status
      */
     public function setStatus($status);
 
     /**
-     * Fill the order with items from the customer's cart
+     * Fill the order with items from the customer's cart.
      */
     public function fillFromCart();
 }

@@ -1,43 +1,44 @@
 <?php
+
 namespace Soda\Ecommerce\Foundation;
 
-use Illuminate\Contracts\Auth\Guard;
 use Session;
-use Soda\Ecommerce\Cart\Interfaces\CartInstanceInterface;
+use Illuminate\Contracts\Auth\Guard;
 use Soda\Ecommerce\Store\Interfaces\StoreInterface;
+use Soda\Ecommerce\Cart\Interfaces\CartInstanceInterface;
 
 class EcommerceInstance
 {
     /**
-     * Current store being visited
+     * Current store being visited.
      *
      * @var StoreInterface
      */
     protected $currentStore;
 
     /**
-     * Auth guard associated with the store customer base
+     * Auth guard associated with the store customer base.
      *
      * @var Guard
      */
     protected $guard;
 
     /**
-     * Associated helper cart instance
+     * Associated helper cart instance.
      *
      * @var CartInstanceInterface
      */
     protected $cart;
 
     /**
-     * ID of visitor associated with cart
+     * ID of visitor associated with cart.
      *
      * @var string
      */
     protected $visitorId;
 
     /**
-     * Type of visitor associated with cart
+     * Type of visitor associated with cart.
      *
      * @var string
      */
@@ -58,7 +59,7 @@ class EcommerceInstance
     }
 
     /**
-     * Get the associated cart instance
+     * Get the associated cart instance.
      *
      * @return CartInstanceInterface
      */
@@ -68,7 +69,7 @@ class EcommerceInstance
     }
 
     /**
-     * Get the current store instance
+     * Get the current store instance.
      *
      * @return StoreInterface
      */
@@ -78,7 +79,7 @@ class EcommerceInstance
     }
 
     /**
-     * Get the associated auth guard
+     * Get the associated auth guard.
      *
      * @return Guard
      */
@@ -88,7 +89,7 @@ class EcommerceInstance
     }
 
     /**
-     * Get the ID of the current visitor
+     * Get the ID of the current visitor.
      *
      * @return mixed
      */
@@ -102,7 +103,7 @@ class EcommerceInstance
     }
 
     /**
-     * Get the type of the current visitor
+     * Get the type of the current visitor.
      *
      * @return string
      */

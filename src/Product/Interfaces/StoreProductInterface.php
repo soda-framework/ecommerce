@@ -15,12 +15,12 @@ interface StoreProductInterface
     public function store();
 
     /**
-     * Get the unique identifier for the store product
+     * Get the unique identifier for the store product.
      */
     public function getId();
 
     /**
-     * Get the store's price for the product
+     * Get the store's price for the product.
      */
     public function getPrice();
 }
