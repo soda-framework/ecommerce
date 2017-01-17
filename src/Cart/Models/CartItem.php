@@ -3,10 +3,10 @@
 namespace Soda\Ecommerce\Cart\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Soda\Ecommerce\Cart\Interfaces\CartItemInterface;
 use Soda\Ecommerce\Cart\Observers\CartItemObserver;
-use Soda\Ecommerce\Product\Interfaces\StoreProductInterface;
+use Soda\Ecommerce\Cart\Interfaces\CartItemInterface;
 use Soda\Ecommerce\Support\Traits\QuantifiableItemTrait;
+use Soda\Ecommerce\Product\Interfaces\StoreProductInterface;
 
 class CartItem extends Model implements CartItemInterface
 {
@@ -57,7 +57,7 @@ class CartItem extends Model implements CartItemInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
@@ -67,7 +67,7 @@ class CartItem extends Model implements CartItemInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
@@ -77,9 +77,9 @@ class CartItem extends Model implements CartItemInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
-     * @return integer
+     * @return int
      */
     public function getId()
     {
@@ -87,9 +87,9 @@ class CartItem extends Model implements CartItemInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
-     * @return integer
+     * @return int
      */
     public function getStoreId()
     {
@@ -97,9 +97,9 @@ class CartItem extends Model implements CartItemInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
-     * @return integer
+     * @return int
      */
     public function getProductId()
     {

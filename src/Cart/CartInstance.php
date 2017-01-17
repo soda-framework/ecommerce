@@ -4,23 +4,21 @@ namespace Soda\Ecommerce\Cart;
 
 use Illuminate\Support\Collection;
 use Soda\Ecommerce\Cart\Events\CartWasEmptied;
-use Soda\Ecommerce\Cart\Events\ItemWasAddedToCart;
-use Soda\Ecommerce\Cart\Events\ItemWasRemovedFromCart;
-use Soda\Ecommerce\Cart\Interfaces\CartInstanceInterface;
 use Soda\Ecommerce\Cart\Interfaces\CartItemInterface;
+use Soda\Ecommerce\Cart\Interfaces\CartInstanceInterface;
 use Soda\Ecommerce\Cart\Interfaces\CartItemRepositoryInterface;
 
 class CartInstance implements CartInstanceInterface
 {
     /**
-     * The repository used to interact with the cart database
+     * The repository used to interact with the cart database.
      *
      * @var CartRepositoryInterface
      */
     protected $cart;
 
     /**
-     * Collection of items in the cart
+     * Collection of items in the cart.
      *
      * @var Collection
      */
@@ -28,7 +26,7 @@ class CartInstance implements CartInstanceInterface
 
     /**
      * Boolean to determine whether items have been loaded.
-     * Used to prevent multiple unnecesary sql queries
+     * Used to prevent multiple unnecesary sql queries.
      *
      * @var bool
      */
@@ -46,7 +44,7 @@ class CartInstance implements CartInstanceInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return int
      */
@@ -56,7 +54,7 @@ class CartInstance implements CartInstanceInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return bool
      */
@@ -66,7 +64,7 @@ class CartInstance implements CartInstanceInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return int
      */
@@ -76,13 +74,13 @@ class CartInstance implements CartInstanceInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Collection
      */
     public function getItems()
     {
-        if (!$this->itemsLoaded) {
+        if (! $this->itemsLoaded) {
             $this->loadItems();
             $this->itemsLoaded = true;
         }
@@ -91,7 +89,7 @@ class CartInstance implements CartInstanceInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @param      $productId
      * @param int  $quantity
@@ -112,7 +110,7 @@ class CartInstance implements CartInstanceInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @param     $productId
      * @param int $quantity
@@ -133,7 +131,7 @@ class CartInstance implements CartInstanceInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @param $productId
      *
@@ -149,7 +147,7 @@ class CartInstance implements CartInstanceInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return $this;
      */
@@ -165,7 +163,7 @@ class CartInstance implements CartInstanceInterface
     }
 
     /**
-     * Loads cart items from the database into the visitor's cart
+     * Loads cart items from the database into the visitor's cart.
      *
      * @return $this
      */
@@ -178,7 +176,7 @@ class CartInstance implements CartInstanceInterface
 
     /**
      * Updates the cart items collection if it has already been loaded,
-     * to prevent further database calls later on
+     * to prevent further database calls later on.
      *
      * @param CartItemInterface $item
      *

@@ -2,8 +2,8 @@
 
 namespace Soda\Ecommerce\Product\Observers;
 
-use Soda\Ecommerce\Cart\Interfaces\CartItemRepositoryInterface;
 use Soda\Ecommerce\Product\Interfaces\StoreProductInterface;
+use Soda\Ecommerce\Cart\Interfaces\CartItemRepositoryInterface;
 
 class StoreProductObserver
 {

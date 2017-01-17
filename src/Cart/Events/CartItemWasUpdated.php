@@ -1,7 +1,7 @@
 <?php
+
 namespace Soda\Ecommerce\Cart\Events;
 
-use Ecommerce;
 use Soda\Ecommerce\Cart\Interfaces\CartItemInterface;
 
 class CartItemWasUpdated

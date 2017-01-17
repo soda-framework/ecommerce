@@ -3,12 +3,12 @@
 namespace Soda\Ecommerce\Customer\Models;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 use Soda\Cms\Models\Traits\PermissionsRoleTrait;
-use Soda\Ecommerce\Customer\Interfaces\CustomerAddressInterface;
-use Soda\Ecommerce\Customer\Interfaces\CustomerInterface;
 use Soda\Ecommerce\Order\Interfaces\OrderInterface;
 use Soda\Ecommerce\Store\Interfaces\StoreInterface;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Soda\Ecommerce\Customer\Interfaces\CustomerInterface;
+use Soda\Ecommerce\Customer\Interfaces\CustomerAddressInterface;
 
 class Customer extends Authenticatable implements CustomerInterface
 {
@@ -54,7 +54,7 @@ class Customer extends Authenticatable implements CustomerInterface
     protected $dates = ['deleted_at'];
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
@@ -64,7 +64,7 @@ class Customer extends Authenticatable implements CustomerInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
@@ -74,7 +74,7 @@ class Customer extends Authenticatable implements CustomerInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */

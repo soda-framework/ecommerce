@@ -3,11 +3,11 @@
 namespace Soda\Ecommerce\Order\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Soda\Ecommerce\Customer\Interfaces\CustomerInterface;
-use Soda\Ecommerce\Foundation\Exceptions\InvalidOrderException;
+use Soda\Ecommerce\Order\Observers\OrderObserver;
 use Soda\Ecommerce\Order\Interfaces\OrderInterface;
 use Soda\Ecommerce\Order\Interfaces\OrderItemInterface;
-use Soda\Ecommerce\Order\Observers\OrderObserver;
+use Soda\Ecommerce\Customer\Interfaces\CustomerInterface;
+use Soda\Ecommerce\Foundation\Exceptions\InvalidOrderException;
 
 class Order extends Model implements OrderInterface
 {
@@ -45,7 +45,7 @@ class Order extends Model implements OrderInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
@@ -55,7 +55,7 @@ class Order extends Model implements OrderInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
@@ -65,7 +65,7 @@ class Order extends Model implements OrderInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return string
      */
@@ -75,7 +75,7 @@ class Order extends Model implements OrderInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return $this
      */
@@ -87,7 +87,7 @@ class Order extends Model implements OrderInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @throws InvalidOrderException
      */
@@ -97,7 +97,7 @@ class Order extends Model implements OrderInterface
 
         $items = $cart->getItems();
 
-        if (!count($items)) {
+        if (! count($items)) {
             throw new InvalidOrderException('There are no items in your cart.');
         }
 
@@ -114,7 +114,7 @@ class Order extends Model implements OrderInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */

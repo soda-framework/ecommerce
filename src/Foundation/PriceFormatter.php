@@ -5,7 +5,7 @@ namespace Soda\Ecommerce\Foundation;
 class PriceFormatter
 {
     /**
-     * Format a price and a quantity
+     * Format a price and a quantity.
      *
      * @param $price
      * @param $quantity
@@ -18,7 +18,7 @@ class PriceFormatter
     }
 
     /**
-     * Format a singular price
+     * Format a singular price.
      *
      * @param $price
      *

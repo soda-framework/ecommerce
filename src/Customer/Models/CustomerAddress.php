@@ -4,8 +4,8 @@ namespace Soda\Ecommerce\Customer\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Soda\Ecommerce\Customer\Interfaces\CustomerAddressInterface;
 use Soda\Ecommerce\Customer\Interfaces\CustomerInterface;
+use Soda\Ecommerce\Customer\Interfaces\CustomerAddressInterface;
 
 class CustomerAddress extends Model implements CustomerAddressInterface
 {
@@ -39,7 +39,7 @@ class CustomerAddress extends Model implements CustomerAddressInterface
     protected $dates = ['deleted_at'];
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */

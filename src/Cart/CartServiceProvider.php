@@ -2,12 +2,12 @@
 
 namespace Soda\Ecommerce\Cart;
 
-use Illuminate\Support\ServiceProvider;
-use Soda\Ecommerce\Cart\Interfaces\CartInstanceInterface;
-use Soda\Ecommerce\Cart\Interfaces\CartItemInterface;
-use Soda\Ecommerce\Cart\Interfaces\CartItemRepositoryInterface;
 use Soda\Ecommerce\Cart\Models\Cart;
+use Illuminate\Support\ServiceProvider;
 use Soda\Ecommerce\Cart\Models\CartItem;
+use Soda\Ecommerce\Cart\Interfaces\CartItemInterface;
+use Soda\Ecommerce\Cart\Interfaces\CartInstanceInterface;
+use Soda\Ecommerce\Cart\Interfaces\CartItemRepositoryInterface;
 
 class CartServiceProvider extends ServiceProvider
 {
